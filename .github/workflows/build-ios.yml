@@ -1,0 +1,35 @@
+name: Build ASCENT for AltStore
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract source
+        run: unzip -q ASCENT-iPhone-source.zip -d source
+      - name: Check JavaScript
+        working-directory: source
+        run: |
+          node --check Web/app.js
+          node --check Web/model.js
+          node tests/model-tests.cjs
+      - name: Test native file storage
+        working-directory: source
+        run: |
+          mkdir -p test-output
+          node tests/make-fixture.cjs
+          xcrun swiftc -swift-version 5 -parse-as-library Native/AscentStore.swift tests/StoreTests.swift -o test-output/store-tests
+          test-output/store-tests test-output/fixture.json
+      - name: Build unsigned device IPA
+        working-directory: source
+        run: bash build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ASCENT-iPhone-AltStore
+          path: source/dist/ASCENT-iPhone-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 7
