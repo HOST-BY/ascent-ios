@@ -1,4 +1,4 @@
-# ASCENT 0.9 for iPhone
+# ASCENT 0.9.1 for iPhone
 
 Native iOS shell for a personal planner, habits, finances, notes and creative projects. Install with AltStore Classic.
 
@@ -12,4 +12,6 @@ Backend schema is in cloud/schema.sql inside the archive. An administrator creat
 
 Automated model, file-storage, merge and mock two-device tests do not replace testing sign-in and installation on the actual iPhone. No background iOS sync or background notifications are promised. Keep a JSON backup before updating or connecting an account.
 
-Version 0.9 adds a manual crypto portfolio, transactions, watchlist, research ideas, day tasks and CoinDesk headlines. Public CoinGecko quotes support 20 assets in RUB and USD. Average acquisition cost includes fees; historical FX must be entered for cross-currency cost calculations. Missing basis is shown as unavailable. Sources may be unavailable or rate limited; cached quotes are marked with timestamps. No wallet report import, trading or guaranteed investment recommendations. Update both clients for the new section.
+Version 0.9 adds a manual crypto portfolio, transactions, watchlist, research ideas, day tasks and CoinDesk headlines. Public CoinGecko quotes support 26 assets in RUB and USD. Average acquisition cost includes fees; historical FX must be entered for cross-currency cost calculations. Missing basis is shown as unavailable. Sources may be unavailable or rate limited; cached quotes are marked with timestamps. No wallet report import, trading or guaranteed investment recommendations. Update both clients for the new section.
+
+Version 0.9.1 adds ADI, PUMP, FF, ZEC, ENA, PEPE and bundled offline coin logos. Toncoin is displayed as GRAM while retaining its existing record identity. Avalanche quote mapping corrected. No screenshot balances or transactions are imported.
