@@ -1,4 +1,4 @@
-# ASCENT 0.9.2 for iPhone
+# ASCENT 0.9.3 for iPhone
 
 Native iOS shell for a personal planner, habits, finances, notes and creative projects. Install with AltStore Classic.
 
@@ -17,3 +17,5 @@ Version 0.9 adds a manual crypto portfolio, transactions, watchlist, research id
 Version 0.9.1 adds ADI, PUMP, FF, ZEC, ENA, PEPE and bundled offline coin logos. Toncoin is displayed as GRAM while retaining its existing record identity. Avalanche quote mapping corrected. No screenshot balances or transactions are imported.
 
 Version 0.9.2 adds eight tokenized stocks and ETFs: AMZNx, VTIx, SCHFx, GOOGLx, AAPLx, IEMGx, NVDAx and INTCx, with local icons and token quotes. Equity tokens are excluded from the cryptocurrency research screener.
+
+Version 0.9.3 introduces Investments with separate Cryptocurrency and Stock Market tabs. Portfolios, totals, operations, watchlists, ideas and tasks are filtered by asset class. Existing records retain their IDs and storage format.
